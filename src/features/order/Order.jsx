@@ -62,7 +62,6 @@ function Order() {
     // This will basically load the data from the menu and store in this fetcher object.
     // Then we can retrive the data when we want.
 
-
     // Just like normal page navigation, this fetcher can also be in different state.
     // By default the fetcher is in "idle" state.
     if (!fetcher.data && fetcher.state === "idle") fetcher.load('/menu');
@@ -71,7 +70,7 @@ function Order() {
   ); 
   const pizzas = fetcher.data;
 
-  // Everyone can search for all orders, so for privacy reasons we're gonna gonna exclude names or address, these are only for the restaurant staff
+  // Everyone can search for all orders, so for privacy reasons we're gonna gonna exclude names or address, these are only for the restaurant staff.
   const {
     id,
     status,

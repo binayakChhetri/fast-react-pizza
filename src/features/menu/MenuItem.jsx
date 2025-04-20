@@ -20,9 +20,9 @@ function MenuItem({ pizza }) {
     quantity:1,
     unitPrice,
     totalPrice:unitPrice * 1
-  }
-    dispatch(addItem(newItem));
-  }
+  };
+  dispatch(addItem(newItem));
+}
   return (
     <li className="flex gap-4 justify-start 
     items-start py-2">
@@ -41,7 +41,6 @@ function MenuItem({ pizza }) {
          {!soldOut && !isInCart && (<Button type = "small" onClick={handleAddToCart}>ADD TO CART</Button>)} 
         </div>
       </div>
-      
     </li>
   );
 }

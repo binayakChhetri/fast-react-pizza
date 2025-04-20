@@ -20,11 +20,11 @@ const cartSlice = createSlice({
     reducers:{
         addItem(state,action) {
             // payload = newItem
-            state.cart.push(action.payload)
+            state.cart.push(action.payload);
         },
         deleteItem(state, action) {
             // payload = pizzaId
-            state.cart = state.cart.filter(item => item.pizzaId !== action.payload)
+            state.cart = state.cart.filter(item => item.pizzaId !== action.payload);
         },
         increaseItemQuantity(state, action) {
             // payload = pizzaId

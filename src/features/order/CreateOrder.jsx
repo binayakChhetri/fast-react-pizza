@@ -160,6 +160,9 @@ function CreateOrder() {
     </div>
   );
 }
+
+
+
 // Whenever the form will be submitted, behind the scenes, React Router will then call
 // this action function and it will pass in the request that was submitted.
 
@@ -170,7 +173,7 @@ export async function action({ request }) {
   //In short, below 2 lines code are simply used to get the data from the form
   const formData = await request.formData();
   const data = Object.fromEntries(formData);
-
+  
 
   const order = {
     ...data,

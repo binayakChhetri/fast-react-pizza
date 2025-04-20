@@ -10,12 +10,12 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AppLayout from "./UI/AppLayout";
 import {action as updateOrderAction} from "./features/order/UpdateOrder"
 // createBrowserRouter -> This is a function where we define our routes
-// In createBrowserRouter function we pass an array of objects where each object is one route
+// In createBrowserRouter function, we pass an array of objects where each object is one route
 
 // This type of routing is necessary in react router 6.4 inorder to enable data fetching or data loading
 // with react router
 
-//  The old way still works but with it we can't fetch data or submit datas through forms
+//  The old way still works but with it we can't fetch data or submit datas through forms.
 const router = createBrowserRouter([
   {
     //This provides layout to the application. Therefore we don't need to provide path in this
@@ -29,7 +29,9 @@ const router = createBrowserRouter([
 
     //We define nested route using the given code below
     children: [
-      { path: "/", element: <Home /> },
+      { path: "/", 
+        element: <Home /> 
+      },
       {
         path: "/menu",
         element: <Menu />,
