@@ -39,7 +39,7 @@ const cartSlice = createSlice({
             item.quantity--;  
             item.totalPrice = item.quantity * item.unitPrice;
             if (item.quantity === 0) {
-                // Here we are reusing the logic og the deleteItem action. 
+                // Here we are reusing the logic of the deleteItem action. 
                 // state.cart = state.cart.filter(item => item.pizzaId !== action.payload)
     
                 // We can use that same logic by using a trick written below
